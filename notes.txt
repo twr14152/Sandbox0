@@ -1,0 +1,5 @@
+Adding go path variables to Raspberry PI
+
+echo export PATH=$PATH:/usr/local/go/bin >> .bashrc
+
+echo export PATH=“$PATH:$GOROOT/bin” >> .bashrc
