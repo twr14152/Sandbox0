@@ -1,0 +1,7 @@
+{{/* base.tmpl */}}
+{{define "base"}}
+hostname {{.Base.Hostname}}
+ip name-server {{.Base.Dns_ip}}
+{{template "bgp" .}}
+{{template "ntp" .}}
+{{end}}
