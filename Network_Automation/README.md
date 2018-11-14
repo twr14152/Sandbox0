@@ -10,7 +10,7 @@ Resources used:
 - Go bootcamp
 
 
-router_template_script.go 
+usingTemplates/router_template_script.go 
 - can be used to create router configs from go template files. 
 - variables for the template can be found in the host_var.yaml file
 
