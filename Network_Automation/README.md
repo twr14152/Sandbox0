@@ -8,6 +8,7 @@ Resources used:
 - Introducing Go
 - An Introduction to Programming in Go
 - Go bootcamp
+- Effective Go
 
 
 usingTemplates/router_template_script.go 
