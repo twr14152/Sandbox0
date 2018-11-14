@@ -1,0 +1,6 @@
+{{/* ntp.tmpl */}}
+{{ define "ntp" }}
+ntp source-interface {{.Ntp.Source}}
+ntp server {{.Ntp.Primary}} prefer
+ntp server {{.Ntp.Secondary}}
+{{ end }}
