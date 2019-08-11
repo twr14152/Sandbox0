@@ -7,7 +7,7 @@ import (
 var num uint64 = 900
 var i uint64
 
-func bpf(num uint64) {
+func find_bpn(num uint64) {
 	i = 2
 	for i < num {
 		if num%i == 0 {
@@ -16,9 +16,9 @@ func bpf(num uint64) {
 			i += 1
 		}
 	}
-	fmt.Println("BPF: ", i)
+	fmt.Println("BPN: ", i)
 }
 
 func main() {
-	bpf(num)
+	find_bpn(num)
 }
