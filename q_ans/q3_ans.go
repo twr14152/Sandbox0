@@ -12,7 +12,6 @@ func bpf(num uint64) {
 	for i < num {
 		if num%i == 0 {
 			num = num / i
-			i = 2
 		} else {
 			i += 1
 		}
