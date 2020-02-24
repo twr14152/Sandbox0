@@ -41,10 +41,10 @@ func countLines(f *os.File, counts map[string]int, filenames map[string]map[stri
 	input := bufio.NewScanner(f)
 	for input.Scan() {
 		text := input.Text()
-		fileName := f.Name()
+		fn := f.Name()
 		counts[text]++
 		if filenames[text] == nil {
 			filenames[text] = make(map[string]int)
 		}
-		filenames[text][fileName]++
+		filenames[text][fn]++
 	}
