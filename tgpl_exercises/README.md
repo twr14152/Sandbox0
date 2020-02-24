@@ -1,2 +1,2 @@
-# These files are my answers to the exercises in TGPL book.
+# My attempt at answering the chapter exercises in TGPL book.
 
