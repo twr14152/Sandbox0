@@ -9,3 +9,8 @@ func IsPosInt(num int) (int, error) {
 	}
 	return num, nil
 }
+/*
+Copy directory "verify/verify.go" into go/src
+go install verify
+*/
+
