@@ -25,5 +25,14 @@ func main() {
 }
 
 /*
-Your Six Lucky Number:2-6-51-13-18-33
+pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch9 $ go run lucky6.go 
+
+Your Six Lucky Number:57-13-56-51-18-24
+pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch9 $ go run lucky6.go 
+
+Your Six Lucky Number:9-5-59-41-46-58
+pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch9 $ go run lucky6.go 
+
+Your Six Lucky Number:40-2-38-42-37-19
+pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch9 $ 
 */
