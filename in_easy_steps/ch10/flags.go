@@ -22,4 +22,8 @@ go run flags.go
 Text: C#
 Number: 8  Status: false
 
+go run flags.go -txt=test_flag -num=2020 -sta=true
+
+Text: test_flag
+Number: 2020  Status: true
 */
