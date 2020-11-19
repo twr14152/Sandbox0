@@ -1,3 +1,7 @@
+//So far it looks like io/ioutil is good for creating and reading files
+//os.O_APPEND|os.O_WRONLY used for appending files using filname.Write options
+
+
 package main
 
 import (
