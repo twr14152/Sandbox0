@@ -58,10 +58,10 @@ Generate config file....
 
 Verfying config_file.txt generated
 total 2360
+-rw-r--r-- 1 runner runner      56 Nov 20 13:28 config_file.txt
 -rw-r--r-- 1 runner runner      21 Nov 19 01:09 go.mod
--rw-r--r-- 1 runner runner    1176 Nov 20 13:11 main.go
--rwxr-xr-x 1 runner runner 2402629 Nov 20 13:11 main
--rw-r--r-- 1 runner runner      56 Nov 20 13:11 config_file.txt
+-rwxr-xr-x 1 runner runner 2402629 Nov 20 13:28 main
+-rw-r--r-- 1 runner runner    1716 Nov 20 13:15 main.go
 
 Contents of the config:
 
