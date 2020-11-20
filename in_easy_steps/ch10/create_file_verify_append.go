@@ -8,7 +8,7 @@ import (
 )
 
 func execute() {
-    out, err := exec.Command("ls", "-ltr").Output()
+    out, err := exec.Command("ls", "-l").Output()
     if err != nil {
         fmt.Printf("%s", err)
     }
