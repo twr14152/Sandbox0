@@ -1,1 +1,1 @@
-This repository will be a sandbox for testing Golang.
+This repository will be a sandbox for testing Golang code.
