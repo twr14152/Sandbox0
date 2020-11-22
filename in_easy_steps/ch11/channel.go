@@ -8,7 +8,7 @@ import (
 func count(msg string, c chan string) {
 	fmt.Println("Channel Sender")
 	for i := 0; i < 3; i++ {
-		fmt.Println("Sending message: ")
+		fmt.Print("Sending: ")
 		c <- msg + " at " + time.Now().Format("04:05")
 		time.Sleep(1 * time.Second)
 	}
@@ -33,16 +33,14 @@ func main() {
 pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch11 $ go run channel.go 
 Channel Receiver - Open
 Channel Sender
-Sending message: 
-Message at 43:21
+Sending: Message at 45:38
 Channel Receiver - Open
-Sending message: 
-Message at 43:22
+Sending: Message at 45:39
 Channel Receiver - Open
-Sending message: 
-Message at 43:23
+Sending: Message at 45:40
 Channel Receiver - Open
 Sender closing channel
 Channel receiver - Closed
 pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch11 $ 
+
 */
