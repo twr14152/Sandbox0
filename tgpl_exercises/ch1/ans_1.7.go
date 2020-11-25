@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-    "io"
+	"io"
 	"net/http"
 	"os"
 )
@@ -23,4 +23,3 @@ func main() {
 		fmt.Printf("%s", b)
 	}
 }
-
