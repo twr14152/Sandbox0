@@ -48,3 +48,17 @@ func countLines(f *os.File, counts map[string]int, filenames map[string]map[stri
 		}
 		filenames[text][fn]++
 	}
+}
+/*
+ ./main dup2.txt hello.txt test.txt 
+********************** RESULTS ************************
+
+    3   test    3               test.txt
+
+    2   Two 2               dup2.txt
+
+    2   This is a test  2               test.txt
+
+    2   ONE 2               dup2.txt
+ 
+*/
