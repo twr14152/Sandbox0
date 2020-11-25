@@ -78,10 +78,12 @@ func main() {
   counts := make(map[string]int)
   for _, filename := range os.Args[1:] {
     data, err := ioutil.ReadFile(filename)
+    //data is a byte slice
     if err != nil {
       fmt.Fprintf(os.Stderr, "dup3: %v\n", err)
       continue
     }
+    // convert byte slice to a string
     for _, line := range strings.Split(string(data), "\n") {
       counts[line]++
     }
