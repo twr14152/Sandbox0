@@ -21,6 +21,6 @@ func main() {
 			os.Exit(1)
 		}
 		fmt.Printf("%s", b)
-    fmt.Printf("%s", resp.Status)
+		fmt.Printf("%s", resp.Status)
 	}
 }
