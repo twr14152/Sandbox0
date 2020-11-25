@@ -1,3 +1,4 @@
+/* Example 1 
 package main
 
 import (
@@ -18,28 +19,82 @@ func main() {
     }
   }
 }
+*/
+/* Example 2
+package main
+
+import (
+  "fmt"
+  "bufio"
+  "os"
+)
+/* Example 2
+func main() {
+  counts := make(map[string]int)
+  files := os.Args[1:]
+  if len(files) == 0 {
+    countLines(os.Stdin, counts)
+  } else {
+    for _, arg := range files {
+      f, err := os.Open(arg)
+      if err != nil {
+        fmt.Fprintf(os.Stderr, "dup2: %v\n", err)
+        continue
+      }
+      countLines(f, counts)
+      f.Close()
+      }
+    }
+    for line, n := range counts {
+      if n > 1 {
+        fmt.Printf("%d\t%s\n", n, line)
+      }
+    }
+}
+func countLines(f *os.File, counts map[string]int) {
+  input := bufio.NewScanner(f)
+  for input.Scan() {
+    counts[input.Text()]++
+  }
+}
+
 /*
- cat test.txt 
-This is a test
-This is a test
-This is not a matching line
-test
-test
-test
-------
- ./main < test.txt 
+ ./main < test.txt
 2   This is a test
 3   test
+ 
+*/
 
-----
-%d de cimal integer
-%x, %o, %b integer in hexade cimal, octal, binar y
-%f, %g, %e floating-p oint number: 3.141593 3.141592653589793 3.141593e+00
-%t boole an: true or false
-%c rune (Unico de co de point)
-%s st ring
-%q quot ed str ing "abc" or rune 'c'
-%v any value in a natural for mat
-%T type of any value
-%% literal percent sig n (no operand)
+/* Example 3 */
+package main
+
+import (
+  "fmt"
+  "io/ioutil"
+  "os"
+  "strings"
+)
+func main() {
+  counts := make(map[string]int)
+  for _, filename := range os.Args[1:] {
+    data, err := ioutil.ReadFile(filename)
+    if err != nil {
+      fmt.Fprintf(os.Stderr, "dup3: %v\n", err)
+      continue
+    }
+    for _, line := range strings.Split(string(data), "\n") {
+      counts[line]++
+    }
+    for line, n := range counts {
+      if n > 1 {
+        fmt.Printf("%d\t%s\n", n, line)
+      }
+    }
+  }
+}
+/*
+ ./main test.txt
+2   This is a test
+3   test
+ 
 */
