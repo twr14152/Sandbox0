@@ -22,7 +22,12 @@ func main() {
  cat test.txt 
 This is a test
 This is a test
+This is not a matching line
+test
+test
+test
 ------
  ./main < test.txt 
 2   This is a test
+3   test
 */
