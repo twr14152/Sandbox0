@@ -9,15 +9,16 @@ import (
 )
 
 func main() {
-  
+
 	message := []byte("This line will get overwritten")
-  message1 := []byte("Does not look like you can append.\nThis is line 2\nline 3\nEtc..\n")
+	message1 := []byte("Does not look like you can append.\nThis is line 2\nline 3\nEtc..\n")
 	err := ioutil.WriteFile("hello.txt", message, 0644)
-  err = ioutil.WriteFile("hello.txt", message1, 0644)
+	err = ioutil.WriteFile("hello.txt", message1, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
 }
+
 
 /*
  ./main
