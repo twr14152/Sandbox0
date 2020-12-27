@@ -1,7 +1,9 @@
 # Get Programming with Go - Notes and Solutions
 
-## Formating with Printf 
-  %-10v Pads 10 character to right of formatted word
-  %10v Pads 10 characters to the left of the formatted word
+## Chapter 1
 
-  https://play.golang.org/p/4BDZmwIUSFU
+### Formating Notes on Printf
+ - %-10v Pads 10 character to right of formatted word
+ - %10v Pads 10 characters to the left of the formatted word
+
+ - https://play.golang.org/p/4BDZmwIUSFU
