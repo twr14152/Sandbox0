@@ -7,3 +7,6 @@
  - %10v Pads 10 characters to the left of the formatted word
 
  - https://play.golang.org/p/4BDZmwIUSFU
+
+## Chapter 3
+- Fallthrough https://play.golang.org/p/dluOfsvoKqz
