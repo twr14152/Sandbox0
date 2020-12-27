@@ -9,4 +9,4 @@
  - https://play.golang.org/p/4BDZmwIUSFU
 
 ## Chapter 3
-- Fallthrough https://play.golang.org/p/dluOfsvoKqz
+- Fallthrough https://play.golang.org/p/x81nLiYoEn6
