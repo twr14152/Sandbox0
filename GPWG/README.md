@@ -1,4 +1,4 @@
-# Get Programming with Go - Notes and Solutions
+# Get Programming with Go - Notes
 
 ## Chapter 1
 
