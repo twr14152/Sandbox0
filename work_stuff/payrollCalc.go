@@ -5,10 +5,10 @@ import (
 )
 
 // wages
-var name1_wage float64 = 21
-var name2_wage float64 = 20
-var name3_wage float64 = 20
-var name4_wage float64 = 19
+var name1_wage float64 = 0
+var name2_wage float64 = 0
+var name3_wage float64 = 0
+var name4_wage float64 = 0
 
 //overtime rate
 var name1_ot float64 = (name1_wage / 2) + name1_wage
