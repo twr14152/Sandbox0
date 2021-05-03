@@ -1,4 +1,6 @@
 Switch block - when no condition is matched a default category can be used as a catch-all.
 
-For loop can simpley specify a conditional while true will continue to loop.
+for loop - for initializer; test-expression; incrementor/decrementor - run until test expression no longer true
+while loop - a for loop can simply specify a test-expression and looping will continue while test expression is true
+infinite loop - for with out test expression. for { }, conditional statements with break can be used to end loop
 
