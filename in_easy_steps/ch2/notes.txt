@@ -1,0 +1,19 @@
+Chapter 2
+
+explicit variable assignment and initialization 
+var num int = 1
+implicit variable assignment and initialization
+(only inside function block)
+num := 1
+
+
+
+strconv.Atoi() returns int equivalent of a string. (Anything to int) 
+  - string equivalent of int, second value will be nil or error code
+
+strconv.Itoa() returns string data quivalent to integer value. (int to string)
+ 
+strconv.ParseFloat() returns float64 data type equivalent of a string value
+  - string equivalent of float64, second value will be nil or error code
+  
+byte data type (character) stores the ASCII character code number
