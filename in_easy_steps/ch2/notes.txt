@@ -1,5 +1,24 @@
 Chapter 2
 
+Data types:
+
+string - "string of characters"
+int - 100
+float64 - 10.00
+byte - 'a'
+bool - true/false
+
+fmt.Printf("%v\n", var)
+format specifiers
+%s - string
+%d - int
+%f - floating point
+%c - character
+%t - boolean value
+%p - machine memory address
+%v - value in default format (any of the above)
+%T - data type of the variable (int, string, bool, byte, float64)
+
 explicit variable assignment and initialization 
 var num int = 1
 implicit variable assignment and initialization
