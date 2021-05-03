@@ -11,7 +11,7 @@ func main() {
 		counter++
 	}
 	i := 10
-	// while loop equivalent
+	// Infinte loop
 	for {
 		fmt.Println("\t\t\tCountdown", i)
 		i--
