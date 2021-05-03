@@ -1,0 +1,4 @@
+Switch block - when no condition is matched a default category can be used as a catch-all.
+
+For loop can simpley specify a conditional while true will continue to loop.
+
