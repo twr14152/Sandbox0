@@ -6,6 +6,7 @@ import (
 
 func main() {
 	counter := 1
+	//while loop
 	for counter <= 5 {
 		fmt.Println("Loop iteration", counter)
 		counter++
@@ -15,6 +16,7 @@ func main() {
 	for {
 		fmt.Println("\t\t\tCountdown", i)
 		i--
+		// conditional break
 		if i < 1 {
 			fmt.Println("\t\t\tLift Off!")
 			break
