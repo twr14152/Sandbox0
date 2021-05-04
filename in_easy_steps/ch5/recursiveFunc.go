@@ -1,4 +1,4 @@
-//Recursive funcs
+//Recursive func
 
 package main
 
