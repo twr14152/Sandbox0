@@ -1,3 +1,5 @@
+// Custom function types
+
 package main
 
 import "fmt"
@@ -6,6 +8,7 @@ func main() {
 	type adder func(int, int) int
 
 	var add adder = func(a int, b int) int {
+		fmt.Print("func add: ")
 		return a + b
 	}
 	fmt.Println("Added: ", add(6, 2))
@@ -18,20 +21,18 @@ func main() {
 }
 
 func dub(twice func(int, int) int) func(int, int) int {
-	fmt.Println("Doubled: ", twice(6, 2)*2)
+	fmt.Println("func dub: Doubled: ", twice(6, 2)*2)
 	div := func(a int, b int) int {
+		fmt.Print("func div: ")
 		return (a + b) / 2
 	}
 	return div
 }
-
 /*
-pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch5 $ go run ftype.go
-Added:  8
-Doubled:  16
-Divided:  4
+func add: Added:  8
+func add: func dub: Doubled:  16
+func div: Divided:  4
 add type: main.adder
 dub type: func(func(int, int) int) func(int, int) int
 div type: func(int, int) int
-pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch5 $
 */
