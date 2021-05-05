@@ -1,4 +1,4 @@
-// Custom function types
+// Custom function types - type adder is created
 
 package main
 
