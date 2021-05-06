@@ -32,7 +32,7 @@ func main() {
 	}
 	article1 := article{
 		"Object Oriented Programming",
-		"In Go, Composition emulate Inheritance",
+		"In Go, Composition emulates Inheritance",
 		member1,
 	}
 	article1.content()
