@@ -7,6 +7,12 @@ type car struct {
 	body  string
 }
 
+/*
+When you call a method, Go automatically handles the conversion between values and pointers,
+so the receiver here could be ( c *car ) if you wanted the method to be able to modify the 
+original struct fields.
+*/
+
 func (c car) accelerate() string {
 	return "accelerating-->"
 }
