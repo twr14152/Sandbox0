@@ -43,18 +43,26 @@ func main() {
 	}
 	article2.content()
 	fmt.Println()
+	
+	article3 := article{
+		"Polymorphism",
+		"Go inheritance is odd",
+		member1,
+        }
+	article3.content()
+	fmt.Println()
 }
-
-
-
-
 
 /*
 Title: Object Oriented Programming
-Content: In Go, Composition emulate Inheritance
+Content: In Go, Composition emulates Inheritance
 Author: Jack Riemenschneider
 
 Title: Next title blah blah
 Content: Some things else blah blah coming next
+Author: Jack Riemenschneider
+
+Title: Polymorphism
+Content: Go inheritance is odd
 Author: Jack Riemenschneider
 */
