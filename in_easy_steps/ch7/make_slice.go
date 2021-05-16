@@ -14,6 +14,7 @@ func main() {
 	describe(slice1)
 	slice1 = append(slice1, slice2[0])
 	describe(slice1)
+	//copy(dst[], src[])
 	copy(slice1[0:], slice1[1:])
 	slice1 = slice1[:len(slice1)-1]
 	describe(slice1)
