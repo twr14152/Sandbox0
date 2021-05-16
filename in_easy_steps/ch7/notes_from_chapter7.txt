@@ -1,0 +1,24 @@
+
+Use Pointers to change the original values within a function
+  Values:
+    int
+    float64
+    string
+    bool
+    struct
+    array
+
+No need to use pointers to change original values within a function
+  References:
+    slice
+    map
+    channel
+    pointer
+    function
+    method
+  
+ 
+ You can create a variadic function sumply by using the final data type with ... wildcard operator in the func signature
+ func testfunc(paramName ...dataType)
+ to execute:
+ testfunc(slicename...)
