@@ -18,8 +18,7 @@ func main() {
 	fmt.Println()
 	fmt.Println("Using for loop to range through the array elements:")
 	for i := range cars {
-		fmt.Print("[", cars[i], "]")
-		fmt.Print(",")
+		fmt.Println(i,"[",cars[i],"]")
 	}
 	fmt.Println()
 	fmt.Println()
@@ -40,7 +39,11 @@ Cars: [honda civic ford mustang chevy volt toyota corolla]
 Coords: [[1 2 3] [4 5 6]]
 
 Using for loop to range through the array elements:
-[honda civic],[ford mustang],[chevy volt],[toyota corolla],
+0 [ honda civic ]
+1 [ ford mustang ]
+2 [ chevy volt ]
+3 [ toyota corolla ]
+
 
 For loop through array using len(array):
 [honda civic],[ford mustang],[chevy volt],[toyota corolla],
