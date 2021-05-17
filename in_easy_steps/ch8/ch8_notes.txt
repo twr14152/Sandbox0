@@ -10,3 +10,5 @@ The time values within individual fields can get retrieved using the following M
   - Unix() - number of secs that have passed since epock 1/1/1970
   - UnixNano() - number of nanosec that have passed since epoch 1/1/1970
   
+  Single hr times are not returned with a leading 0....
+  
