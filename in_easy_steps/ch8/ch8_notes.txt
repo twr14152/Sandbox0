@@ -10,5 +10,11 @@ The time values within individual fields can get retrieved using the following M
   - Unix() - number of secs that have passed since epock 1/1/1970
   - UnixNano() - number of nanosec that have passed since epoch 1/1/1970
   
-  Single hr/min/sec times are not returned with a leading 0.... By default!
+  
+  Depending on the method used (Clock, Unixnano) its possible single hr/min/sec times are not returned with a leading 0.... Beware!
+  Unsure exactly which methods will do this, at this time.
+  
+  Time package includes predefined Kitchen constant that you can use to display AM/PM.
+  Additionally time components can be formatted for 24hr format that will prefix a leading 0 to single hr/min/sec.
+  
   
