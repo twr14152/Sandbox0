@@ -1,0 +1,12 @@
+The time package in go does not provide a method to return millisecond. To get that divide "(nanosecs/1 million) = msec"
+The time values within individual fields can get retrieved using the following Methods:
+  - Hour()
+  - Minute()
+  - Second()
+  - Nanosecond()
+  
+ There are also 3 more Methods:
+  - Clock() - hr, min, sec with in a day
+  - Unix() - number of secs that have passed since epock 1/1/1970
+  - UnixNano() - number of nanosec that have passed since epoch 1/1/1970
+  
