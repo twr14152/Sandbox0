@@ -25,6 +25,7 @@ func main() {
 	fmt.Println(err)	
 }
 /*
+fmt.Printf("\n") accounts for the additional character.
 
 String one and string two.
 28
