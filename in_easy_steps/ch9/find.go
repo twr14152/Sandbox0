@@ -13,8 +13,9 @@ func main() {
 	fmt.Printf("Count of 'e':%v\n", strings.Count(str, "e"))
 	fmt.Printf("Prefix 'ion', %v\n", strings.HasPrefix(str, "ion"))
 	fmt.Printf("Suffix 'ion', %v\n", strings.HasSuffix(str, "ion"))
-	fmt.Println(strings.Replace(str, "temptation", "lots of MONEY!!!", 1))
+	fmt.Println(strings.Replace(str, "temptation", "lots of MONEY!!!", 1)) // 1 = 1 instance to replace, -1 would be all instances. 
 }
+
 /*
 Found 'an':true
 Found 'an' at:3
