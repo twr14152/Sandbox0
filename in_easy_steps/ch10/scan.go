@@ -34,4 +34,16 @@ Too High, try again:
 9
 Correct - My number is 9
  
+
+
+ ./main
+Guess my number its between 1-20:10
+Too Low, try again:
+12
+Too Low, try again:
+13
+Too Low, try again:
+15
+Correct - My number is 15
+ 
 */
