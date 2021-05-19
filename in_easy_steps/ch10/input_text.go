@@ -1,3 +1,5 @@
+//bufio is good for inputing larger streams of data
+
 package main
 
 import (
@@ -20,6 +22,7 @@ func main() {
 	scanner = bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	words := strings.Fields(scanner.Text())
+  fmt.Printf("Words Type: %T\t Value: %v\n", words, words)
 	if scanner.Err() != nil {
 		fmt.Println(scanner.Err())
 	} else {
@@ -29,18 +32,16 @@ func main() {
 
 	}
 }
-
 /*
-pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch10 $ go run input_text.go 
+ ./main
 
-Enter Text:This is a test         
+Enter Text:This is a test
 This is a test
 
-Enter Text:This is a test again
+Enter Text:This is a test
+Words Type: []string     Value: [This is a test]
 0: This
 1: is
 2: a
 3: test
-4: again
-pi@RaspPi4:~/Coding/Go_folder/in_easy_steps/ch10 $ 
-*/
+ 
