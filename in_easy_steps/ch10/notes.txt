@@ -1,0 +1,6 @@
+ioutil is being deprecated in Go1.16
+Replacement will be os.ReadFile
+Below are the methods associated with file, _ :=  os.Open("sameple.txt")
+file.Write(b []byte) also is file.WriteString(s string)
+file.Write uses byte code to write to file.
+file.WriteString using strings to write to file.
