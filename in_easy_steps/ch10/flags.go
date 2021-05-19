@@ -6,6 +6,8 @@ import (
 )
 
 func main() {
+  //setting default values for flags
+  //to change values from defaul ./main -txt=blah -num=0 sta=true
   txt := flag.String("txt", "C#", "A string")
   num := flag.Int("num", 8, "An integer")
   sta := flag.Bool("sta", false, "A boolean")
