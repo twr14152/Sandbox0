@@ -18,7 +18,6 @@ func main() {
 	fmt.Println("My programs best guess is : ", Sqrt(2))
 	fmt.Println("The answer is: ", math.Sqrt(2))
 }
-
 /*
 1.25
 1.359375
