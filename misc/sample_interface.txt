@@ -1,4 +1,4 @@
 messing with interface setup
 
-https://go.dev/play/p/BmD5VKiZ7MI
+https://go.dev/play/p/V3hU2xdDx2g
 
