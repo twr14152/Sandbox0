@@ -17,7 +17,7 @@ func main() {
 		neuronBias := biases[i]
 		var neuronOutput float64 = 0
 		for j := range inputs {
-			neuronOutput = inputs[j] * neuronWeights[j]
+			neuronOutput += inputs[j] * neuronWeights[j]
 		}
 		neuronOutput += neuronBias
 		layersOutput[i] = neuronOutput
@@ -25,9 +25,9 @@ func main() {
 
 	fmt.Println(layersOutput)
 }
+
 /*
 results:
-[4.5 1.75 2.675]
-
+[4.8 1.21 2.385]
 Program exited.
 */
