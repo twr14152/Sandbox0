@@ -1,3 +1,4 @@
+//This example uses multifile approach to emulate numpy example in the book
 //https://go.dev/play/p/TdmXQvaD2iN
 
 
