@@ -1,0 +1,36 @@
+The ioutil package was deprecated in Go 1.16 for a few reasons:
+
+Poorly Defined Scope: The ioutil package was seen as a collection of utility functions that didn't fit neatly into a single coherent category. This made it harder for developers to understand and use effectively1.
+
+Consolidation: Many of the functions in ioutil could be better organized within the io and os packages. For example, ioutil.ReadAll was moved to io.ReadAll, and ioutil.ReadFile was moved to os.ReadFile.
+
+Simplification: By moving these functions to more appropriate packages, the Go standard library becomes simpler and more consistent. This helps new and experienced Go developers alike by making the library easier to navigate and understand.
+
+Deprecation Strategy: Existing code using ioutil continues to work, but new code should use the replacements in the io and os packages. This gradual deprecation strategy helps ensure backward compatibility while encouraging best practices.
+
+Here's an example of how you might migrate code from using ioutil to using os:
+
+Before:
+<<Deprecated>>
+
+import "io/ioutil"
+
+data, err := ioutil.ReadFile("example.txt")
+if err != nil {
+    log.Fatal(err)
+}
+fmt.Println(string(data))
+
+---------------------------------
+
+After:
+<<Go foward strategy>>
+
+import "os"
+
+data, err := os.ReadFile("example.txt")
+if err != nil {
+    log.Fatal(err)
+}
+fmt.Println(string(data))
+
