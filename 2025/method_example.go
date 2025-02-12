@@ -21,5 +21,5 @@ func main() {
 
 
 /*
-
+You have 6 fingers left since you lost 4 in the accident.
 */
